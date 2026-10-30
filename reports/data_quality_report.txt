@@ -1,0 +1,62 @@
+SALES DATA QUALITY REPORT
+=========================
+
+DATASET OVERVIEW
+----------------
+Rows loaded: 30600
+Columns: 16
+Rows retained: 30600
+First date: 2023-01-31
+Last date: 2025-12-31
+Total units sold: 970,188
+Total revenue: 2,174,510,366.99
+
+MISSING VALUES
+--------------
+Total missing cells: 0
+
+Missing values by column:
+order_id                  0
+order_date                0
+state                     0
+zone                      0
+category                  0
+brand_type                0
+customer_gender           0
+customer_age              0
+base_price                0
+discount_percent          0
+final_price               0
+units_sold                0
+revenue                   0
+sales_event               0
+competition_intensity     0
+inventory_pressure        0
+
+DUPLICATES
+----------
+Duplicate rows: 0
+Duplicate order IDs: 0
+
+DATE VALIDATION
+---------------
+Invalid dates: 0
+
+NUMERICAL VALIDATION
+--------------------
+Negative prices: 0
+Negative units sold: 0
+Discounts outside 0-100%: 0
+Customer ages outside 0-120: 0
+
+BUSINESS RULE VALIDATION
+------------------------
+Discount formula mismatches: 0
+Revenue formula mismatches: 0
+Money tolerance: 0.005
+
+FILES CREATED
+-------------
+Cleaned CSV: /Users/vijayanbarasu/sales-intelligence/data/sales_data_clean.csv
+Quality report: /Users/vijayanbarasu/sales-intelligence/reports/data_quality_report.txt
+Discount issues: /Users/vijayanbarasu/sales-intelligence/reports/discount_mismatches.csv

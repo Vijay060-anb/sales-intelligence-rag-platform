@@ -1,0 +1,44 @@
+SALES INTELLIGENCE - BUSINESS RULES
+
+Purpose
+This knowledge base supports sales analysis and executive reporting.
+
+Data sources
+Snowflake is the authoritative source for exact sales figures and numerical aggregations.
+Qdrant stores business definitions, reporting rules, and contextual documents.
+
+Sales metric definitions
+Revenue is the recorded sales revenue. It must not be described as profit because cost and profit data are not available in the current dataset.
+Units sold is the quantity recorded in the units_sold field.
+Base price is the original price before discount.
+Discount percent is the discount percentage recorded for an order.
+Final price is the price after discount.
+Average selling price is the average selling price metric calculated by the approved Snowflake reporting view.
+Unique orders counts distinct order identifiers.
+
+Dataset fields
+order_id: unique order identifier.
+order_date: date of the order.
+state: Indian state or region associated with the order.
+zone: sales zone.
+category: product category.
+brand_type: brand positioning category recorded in the dataset.
+customer_gender: recorded customer gender.
+customer_age: recorded customer age.
+base_price: price before discount.
+discount_percent: recorded discount percentage.
+final_price: price after discount.
+units_sold: units sold.
+revenue: recorded sales revenue.
+sales_event: sales event classification.
+competition_intensity: recorded competition intensity.
+inventory_pressure: recorded inventory pressure.
+
+Reporting rules
+Use Snowflake SQL for exact counts, sums, averages, rankings, and date-based calculations.
+Use retrieved business documents for definitions and business context.
+Do not invent missing metrics, causes, forecasts, or business explanations.
+Do not describe revenue as profit or infer margins without cost data.
+Do not claim that a trend exists unless it has been verified using appropriately grouped data over time.
+If evidence is insufficient, clearly state that the available data does not establish the answer.
+When possible, identify the source document used for contextual answers.

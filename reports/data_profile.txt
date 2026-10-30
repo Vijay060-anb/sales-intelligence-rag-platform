@@ -1,0 +1,42 @@
+Dataset shape: (30600, 16)
+
+Column names:
+['order_id', 'order_date', 'state', 'zone', 'category', 'brand_type', 'customer_gender', 'customer_age', 'base_price', 'discount_percent', 'final_price', 'units_sold', 'revenue', 'sales_event', 'competition_intensity', 'inventory_pressure']
+
+Data types:
+order_id                  object
+order_date                object
+state                     object
+zone                      object
+category                  object
+brand_type                object
+customer_gender           object
+customer_age               int64
+base_price               float64
+discount_percent         float64
+final_price              float64
+units_sold                 int64
+revenue                  float64
+sales_event               object
+competition_intensity     object
+inventory_pressure        object
+
+Missing values:
+order_id                 0
+order_date               0
+state                    0
+zone                     0
+category                 0
+brand_type               0
+customer_gender          0
+customer_age             0
+base_price               0
+discount_percent         0
+final_price              0
+units_sold               0
+revenue                  0
+sales_event              0
+competition_intensity    0
+inventory_pressure       0
+
+Duplicate rows: 0

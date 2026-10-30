@@ -1,0 +1,23 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+
+# Private datasets
+data/*.csv
+business-docs/*.csv
+reports/*.csv
+
+# Private credentials
+*credentials*
+*secret*
+*.pem
+*.key
+
+# System files
+.DS_Store
+
+# Exclude all CSV files
+*.csv
